@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -12,20 +12,23 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://weddingg-invination-huda-shinta.vercel.app/" />
   <meta property="og:title" content="Undangan Pernikahan Shinta &amp; Huda — Kamis, 24 Juni 2026" />
-  <meta property="og:description" content="Kami mengundang kehadiran Anda dalam pernikahan Shinta &amp; Huda, Kamis 24 Juni 2026 di Kp. Tanjung, Desa Selaawi, Kab. Garut, Jawa Barat." />
+  <meta property="og:description"
+    content="Kami mengundang kehadiran Anda dalam pernikahan Shinta &amp; Huda, Kamis 24 Juni 2026 di Kp. Tanjung, Desa Selaawi, Kab. Garut, Jawa Barat." />
   <meta property="og:image" content="https://weddingg-invination-huda-shinta.vercel.app/og-preview.jpg?v=4" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:alt" content="Undangan Pernikahan Shinta &amp; Huda — Kamis, 24 Juni 2026" />
-  <meta property="og:image:secure_url" content="https://weddingg-invination-huda-shinta.vercel.app/og-preview.jpg?v=4" />
+  <meta property="og:image:secure_url"
+    content="https://weddingg-invination-huda-shinta.vercel.app/og-preview.jpg?v=4" />
   <meta property="og:locale" content="id_ID" />
   <meta property="og:site_name" content="Undangan Digital Shinta &amp; Huda" />
 
   <!-- ===== TWITTER / X CARD ===== -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Undangan Pernikahan Shinta &amp; Huda — Kamis, 24 Juni 2026" />
-  <meta name="twitter:description" content="Kami mengundang kehadiran Anda dalam pernikahan Shinta &amp; Huda, Kamis 24 Juni 2026 di Desa Selaawi, Kab. Garut, Jawa Barat." />
+  <meta name="twitter:description"
+    content="Kami mengundang kehadiran Anda dalam pernikahan Shinta &amp; Huda, Kamis 24 Juni 2026 di Desa Selaawi, Kab. Garut, Jawa Barat." />
   <meta name="twitter:image" content="https://weddingg-invination-huda-shinta.vercel.app/og-preview.jpg?v=4" />
   <meta name="twitter:image:alt" content="Undangan Pernikahan Shinta &amp; Huda — Kamis, 24 Juni 2026" />
   <!-- ===== FAVICON ===== -->
@@ -51,11 +54,13 @@
       --emerald-dark: #1A7A55;
       --gold: #C9A84C;
       --gold-light: #E8C97A;
-      --cream: #FDF9F3;
+      --cream: #0d1117;
+      --dark-card: #151d2b;
+      --dark-card-alt: #111923;
       --white: #FFFFFF;
-      --text-dark: #1A2E3A;
-      --text-mid: #3A5068;
-      --text-light: #8AADC0;
+      --text-dark: #e8f0f8;
+      --text-mid: #a8c4d8;
+      --text-light: #7a9ab5;
       --glass-bg: rgba(255, 255, 255, 0.12);
       --glass-border: rgba(255, 255, 255, 0.25);
       --shadow-sm: 0 4px 20px rgba(26, 75, 140, 0.12);
@@ -85,7 +90,7 @@
     body {
       font-family: var(--font-sans);
       color: var(--text-dark);
-      background: var(--cream);
+      background: #0a0e15;
       overflow-x: hidden;
     }
 
@@ -95,7 +100,7 @@
     #loading-screen {
       position: fixed;
       inset: 0;
-      background: var(--gradient-main);
+      background: linear-gradient(180deg, #0a0e15 0%, #0d1117 40%, #111a27 70%, #0f1923 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -125,6 +130,7 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       margin-bottom: 2.5rem;
+      padding-bottom: 0.3em;
       animation: fadeInUp 1s ease 0.3s forwards;
       opacity: 0;
     }
@@ -348,8 +354,9 @@
     .cover-names {
       font-family: var(--font-script);
       font-size: clamp(4rem, 12vw, 7.5rem);
-      line-height: 1.25;
+      line-height: 1.3;
       padding-top: 0.25em;
+      padding-bottom: 0.15em;
       overflow: visible;
       background: var(--gradient-gold);
       -webkit-background-clip: text;
@@ -433,7 +440,7 @@
       font-weight: 600;
       letter-spacing: 5px;
       text-transform: uppercase;
-      color: var(--emerald);
+      color: var(--emerald-light);
       margin-bottom: 0.8rem;
       display: block;
     }
@@ -442,7 +449,7 @@
       font-family: var(--font-serif);
       font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 600;
-      color: var(--denim-dark);
+      color: #e8f0f8;
       margin-bottom: 1rem;
       line-height: 1.2;
     }
@@ -465,13 +472,13 @@
       height: 1px;
       flex: 1;
       max-width: 80px;
-      background: linear-gradient(90deg, var(--emerald), var(--blue-wardah));
+      background: linear-gradient(90deg, var(--emerald), rgba(91, 158, 201, 0.6));
     }
 
     .section-divider-diamond {
       width: 8px;
       height: 8px;
-      background: var(--gold);
+      background: var(--emerald-light);
       transform: rotate(45deg);
     }
 
@@ -572,8 +579,38 @@
        SECTION 2 - MEMPELAI
     ============================================================ */
     #mempelai {
-      background: var(--cream);
+      background: linear-gradient(180deg, #0d1117 0%, #111a27 40%, #0f1923 70%, #0d1117 100%);
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #mempelai::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at 30% 50%, rgba(46, 174, 125, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 50%, rgba(91, 158, 201, 0.06) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    #mempelai .section-tag {
+      color: var(--emerald-light);
+    }
+
+    #mempelai .section-title {
+      color: #e8f0f8;
+    }
+
+    #mempelai .section-divider-line {
+      background: linear-gradient(90deg, var(--emerald), rgba(91, 158, 201, 0.6));
+    }
+
+    #mempelai .section-divider-diamond {
+      background: var(--emerald-light);
     }
 
     .couple-wrapper {
@@ -604,36 +641,63 @@
     }
 
     .couple-card {
-      background: white;
+      background: linear-gradient(180deg, #151d2b 0%, #111923 100%);
       border-radius: 24px;
       padding: 2.5rem 2rem;
-      box-shadow: var(--shadow-md);
       position: relative;
       overflow: hidden;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 1px solid rgba(46, 174, 125, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     }
 
     .couple-card::before {
       content: '';
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
-      height: 5px;
-      border-radius: 24px 24px 0 0;
+      height: 3px;
+      border-radius: 0 0 24px 24px;
+    }
+
+    .couple-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      right: 10%;
+      height: 30px;
+      border-radius: 0 0 24px 24px;
+      filter: blur(15px);
+      opacity: 0.5;
+      transition: opacity 0.4s ease;
     }
 
     .bride-card::before {
       background: linear-gradient(90deg, var(--blue-wardah), var(--emerald));
     }
 
+    .bride-card::after {
+      background: linear-gradient(90deg, var(--blue-wardah), var(--emerald));
+    }
+
     .groom-card::before {
-      background: linear-gradient(90deg, var(--denim), var(--blue-wardah));
+      background: linear-gradient(90deg, var(--emerald), var(--blue-wardah));
+    }
+
+    .groom-card::after {
+      background: linear-gradient(90deg, var(--emerald), var(--blue-wardah));
     }
 
     .couple-card:hover {
       transform: translateY(-8px);
-      box-shadow: var(--shadow-lg);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+      border-color: rgba(46, 174, 125, 0.3);
+    }
+
+    .couple-card:hover::after {
+      opacity: 0.8;
     }
 
     .couple-avatar {
@@ -679,17 +743,19 @@
 
     .bride-ring {
       background: linear-gradient(135deg, var(--blue-wardah), var(--emerald));
+      box-shadow: 0 0 20px rgba(46, 174, 125, 0.3), 0 0 40px rgba(91, 158, 201, 0.15);
     }
 
     .groom-ring {
-      background: linear-gradient(135deg, var(--denim), var(--blue-wardah));
+      background: linear-gradient(135deg, var(--emerald), var(--blue-wardah));
+      box-shadow: 0 0 20px rgba(91, 158, 201, 0.3), 0 0 40px rgba(46, 174, 125, 0.15);
     }
 
     .avatar-inner {
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background: var(--cream);
+      background: #0d1117;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -697,19 +763,24 @@
       overflow: hidden;
     }
 
+    .avatar-inner svg {
+      width: 70px;
+      height: 70px;
+    }
+
     .couple-role {
       font-size: 0.7rem;
       font-weight: 700;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: var(--emerald);
+      color: var(--emerald-light);
       margin-bottom: 0.5rem;
     }
 
     .couple-nickname {
       font-family: var(--font-script);
       font-size: 2.8rem;
-      color: var(--denim-dark);
+      color: #e8f0f8;
       margin-bottom: 0.5rem;
       line-height: 1;
     }
@@ -718,18 +789,18 @@
       font-family: var(--font-serif);
       font-size: 1.05rem;
       font-weight: 600;
-      color: var(--text-dark);
+      color: rgba(232, 240, 248, 0.85);
       margin-bottom: 1rem;
     }
 
     .couple-parents {
       font-size: 0.82rem;
-      color: var(--text-mid);
+      color: rgba(168, 196, 216, 0.75);
       line-height: 1.8;
     }
 
     .couple-parents strong {
-      color: var(--denim);
+      color: var(--emerald-light);
       display: block;
       font-size: 0.75rem;
       letter-spacing: 1px;
@@ -740,13 +811,13 @@
     .couple-and {
       font-family: var(--font-script);
       font-size: clamp(3.5rem, 8vw, 5.5rem);
-      background: var(--gradient-accent);
+      background: linear-gradient(135deg, var(--emerald-light), var(--blue-wardah));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-align: center;
       line-height: 1;
-      filter: drop-shadow(0 4px 10px rgba(46, 174, 125, 0.3));
+      filter: drop-shadow(0 4px 15px rgba(46, 174, 125, 0.4));
     }
 
     /* ============================================================
@@ -833,7 +904,7 @@
        SECTION 4 - ACARA
     ============================================================ */
     #acara {
-      background: white;
+      background: linear-gradient(180deg, #0d1117 0%, #0f1923 50%, #0d1117 100%);
       text-align: center;
     }
 
@@ -847,13 +918,15 @@
     .event-card {
       border-radius: 24px;
       overflow: hidden;
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 1px solid rgba(46, 174, 125, 0.12);
     }
 
     .event-card:hover {
       transform: translateY(-8px);
-      box-shadow: var(--shadow-lg);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+      border-color: rgba(46, 174, 125, 0.25);
     }
 
     .event-card-header {
@@ -869,7 +942,7 @@
       left: 0;
       right: 0;
       height: 60px;
-      background: white;
+      background: var(--dark-card);
       border-radius: 50% 50% 0 0 / 30px 30px 0 0;
     }
 
@@ -894,7 +967,7 @@
     }
 
     .event-card-body {
-      background: white;
+      background: var(--dark-card);
       padding: 2rem 2rem 2.5rem;
       text-align: left;
     }
@@ -982,7 +1055,7 @@
        SECTION 5 - LOKASI & MAPS
     ============================================================ */
     #lokasi {
-      background: var(--cream);
+      background: linear-gradient(180deg, #0d1117 0%, #111a27 50%, #0d1117 100%);
     }
 
     .maps-container {
@@ -1107,17 +1180,18 @@
        SECTION 7 - RSVP FORM
     ============================================================ */
     #rsvp {
-      background: white;
+      background: linear-gradient(180deg, #0d1117 0%, #0f1923 50%, #0d1117 100%);
       text-align: center;
     }
 
     .rsvp-form-wrapper {
       max-width: 620px;
       margin: 3rem auto 0;
-      background: white;
+      background: var(--dark-card);
       border-radius: 28px;
-      box-shadow: var(--shadow-lg);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
       overflow: hidden;
+      border: 1px solid rgba(46, 174, 125, 0.12);
     }
 
     .rsvp-form-header {
@@ -1162,12 +1236,12 @@
     .form-textarea {
       width: 100%;
       padding: 1rem 1.2rem;
-      border: 2px solid #E8EEF4;
+      border: 2px solid rgba(92, 201, 160, 0.15);
       border-radius: 14px;
       font-family: var(--font-sans);
       font-size: 0.95rem;
-      color: var(--text-dark);
-      background: #F8FAFC;
+      color: #e8f0f8;
+      background: rgba(13, 17, 23, 0.6);
       transition: all 0.3s ease;
       outline: none;
       appearance: none;
@@ -1176,9 +1250,9 @@
     .form-input:focus,
     .form-select:focus,
     .form-textarea:focus {
-      border-color: var(--blue-wardah);
-      background: white;
-      box-shadow: 0 0 0 4px rgba(91, 158, 201, 0.12);
+      border-color: var(--emerald);
+      background: rgba(13, 17, 23, 0.8);
+      box-shadow: 0 0 0 4px rgba(46, 174, 125, 0.12);
     }
 
     .form-textarea {
@@ -1217,7 +1291,7 @@
       align-items: center;
       gap: 0.5rem;
       padding: 1.2rem;
-      border: 2px solid #E8EEF4;
+      border: 2px solid rgba(92, 201, 160, 0.15);
       border-radius: 14px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -1277,7 +1351,7 @@
     .rsvp-success h4 {
       font-family: var(--font-serif);
       font-size: 1.8rem;
-      color: var(--denim-dark);
+      color: #e8f0f8;
       margin-bottom: 0.5rem;
     }
 
@@ -1295,13 +1369,13 @@
     .rsvp-list h4 {
       font-family: var(--font-serif);
       font-size: 1.4rem;
-      color: var(--denim-dark);
+      color: #e8f0f8;
       margin-bottom: 1rem;
       text-align: left;
     }
 
     .rsvp-item {
-      background: #F8FAFC;
+      background: rgba(21, 29, 43, 0.8);
       border-left: 4px solid var(--blue-wardah);
       border-radius: 0 12px 12px 0;
       padding: 1rem 1.2rem;
@@ -1355,7 +1429,7 @@
        SECTION 8 - AMPLOP DIGITAL
     ============================================================ */
     #amplop {
-      background: var(--cream);
+      background: linear-gradient(180deg, #0d1117 0%, #111a27 50%, #0d1117 100%);
       text-align: center;
     }
 
@@ -1367,16 +1441,18 @@
     }
 
     .amplop-card {
-      background: white;
+      background: var(--dark-card);
       border-radius: 24px;
       overflow: hidden;
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 1px solid rgba(46, 174, 125, 0.12);
     }
 
     .amplop-card:hover {
       transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+      border-color: rgba(46, 174, 125, 0.25);
     }
 
     .amplop-card-header {
@@ -1417,8 +1493,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: #F8FAFC;
-      border: 2px solid #E8EEF4;
+      background: rgba(13, 17, 23, 0.6);
+      border: 2px solid rgba(92, 201, 160, 0.15);
       border-radius: 14px;
       padding: 0.9rem 1.2rem;
       margin-bottom: 1rem;
@@ -1429,7 +1505,7 @@
       font-family: 'Courier New', monospace;
       font-size: 1.05rem;
       font-weight: 700;
-      color: var(--text-dark);
+      color: #e8f0f8;
       letter-spacing: 2px;
     }
 
@@ -1469,7 +1545,7 @@
        FOOTER / PENUTUP
     ============================================================ */
     #footer {
-      background: var(--gradient-main);
+      background: linear-gradient(135deg, #0a0e15 0%, #0d1117 35%, #111a27 70%, #0f1923 100%);
       text-align: center;
       padding: 80px 2rem 3rem;
       position: relative;
@@ -1499,7 +1575,8 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       filter: drop-shadow(0 4px 15px rgba(201, 168, 76, 0.3));
-      line-height: 1.1;
+      line-height: 1.3;
+      padding-bottom: 0.15em;
       margin-bottom: 1.5rem;
     }
 
@@ -1747,7 +1824,7 @@
       align-items: center;
       gap: 0.4rem;
       padding: 1rem 0.8rem;
-      border: 2px solid #E8EEF4;
+      border: 2px solid rgba(92, 201, 160, 0.15);
       border-radius: 14px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -1761,7 +1838,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      overflow: hidden;
     }
 
     .wa-shinta label .wa-avatar {
@@ -1816,8 +1893,8 @@
       gap: 0.5rem;
       font-size: 0.78rem;
       color: var(--text-mid);
-      background: #F0F9F5;
-      border: 1px solid rgba(46, 174, 125, 0.25);
+      background: rgba(46, 174, 125, 0.08);
+      border: 1px solid rgba(46, 174, 125, 0.2);
       border-radius: 10px;
       padding: 0.7rem 1rem;
       margin-top: 0.8rem;
@@ -1969,7 +2046,50 @@
           <div class="couple-card bride-card reveal-left">
             <div class="avatar-wrapper">
               <div class="avatar-ring bride-ring">
-                <div class="avatar-inner">🌸</div>
+                <div class="avatar-inner">
+                  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="hijabGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#E8B4D0;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#C98DB8;stop-opacity:1" />
+                      </linearGradient>
+                      <linearGradient id="skinGradF" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FDDCBD;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#F5C9A8;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Hijab/Veil outer -->
+                    <ellipse cx="50" cy="48" rx="32" ry="38" fill="url(#hijabGrad)" />
+                    <!-- Hijab drape left -->
+                    <path d="M22 55 Q18 70 28 85 Q35 90 40 88 Q30 75 25 60 Z" fill="#D4A0C4" opacity="0.7" />
+                    <!-- Hijab drape right -->
+                    <path d="M78 55 Q82 70 72 85 Q65 90 60 88 Q70 75 75 60 Z" fill="#D4A0C4" opacity="0.7" />
+                    <!-- Face -->
+                    <ellipse cx="50" cy="48" rx="20" ry="23" fill="url(#skinGradF)" />
+                    <!-- Hijab inner frame -->
+                    <path d="M30 42 Q32 25 50 20 Q68 25 70 42" stroke="#C98DB8" stroke-width="2" fill="none" />
+                    <!-- Eyes -->
+                    <ellipse cx="42" cy="46" rx="2.5" ry="3" fill="#2D2D2D" />
+                    <ellipse cx="58" cy="46" rx="2.5" ry="3" fill="#2D2D2D" />
+                    <circle cx="43" cy="45" r="0.8" fill="white" opacity="0.8" />
+                    <circle cx="59" cy="45" r="0.8" fill="white" opacity="0.8" />
+                    <!-- Eyebrows -->
+                    <path d="M38 41 Q42 39 46 41" stroke="#6D5D4E" stroke-width="1" fill="none"
+                      stroke-linecap="round" />
+                    <path d="M54 41 Q58 39 62 41" stroke="#6D5D4E" stroke-width="1" fill="none"
+                      stroke-linecap="round" />
+                    <!-- Nose -->
+                    <path d="M50 48 Q48 52 50 53 Q52 52 50 48" fill="#E8B89A" opacity="0.5" />
+                    <!-- Smile -->
+                    <path d="M44 56 Q50 61 56 56" stroke="#D4918A" stroke-width="1.5" fill="none"
+                      stroke-linecap="round" />
+                    <!-- Blush -->
+                    <circle cx="38" cy="54" r="3" fill="#FFB5B5" opacity="0.3" />
+                    <circle cx="62" cy="54" r="3" fill="#FFB5B5" opacity="0.3" />
+                    <!-- Lips -->
+                    <ellipse cx="50" cy="57" rx="4" ry="1.5" fill="#E8878A" opacity="0.5" />
+                  </svg>
+                </div>
               </div>
             </div>
             <div class="couple-role">Mempelai Wanita</div>
@@ -1992,7 +2112,49 @@
           <div class="couple-card groom-card reveal-right">
             <div class="avatar-wrapper">
               <div class="avatar-ring groom-ring">
-                <div class="avatar-inner">🌿</div>
+                <div class="avatar-inner">
+                  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="peciGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#2D2D2D;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1A1A1A;stop-opacity:1" />
+                      </linearGradient>
+                      <linearGradient id="skinGradM" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#F0D0A8;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#E0BC92;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Neck/Shoulders -->
+                    <path d="M30 85 Q30 72 38 68 L50 65 L62 68 Q70 72 70 85 Z" fill="#4A6741" />
+                    <!-- Collar -->
+                    <path d="M38 68 L50 75 L62 68" stroke="#5CC9A0" stroke-width="1.5" fill="none" opacity="0.6" />
+                    <!-- Face -->
+                    <ellipse cx="50" cy="48" rx="20" ry="24" fill="url(#skinGradM)" />
+                    <!-- Peci -->
+                    <path d="M30 38 Q30 20 50 16 Q70 20 70 38 L68 40 Q65 32 50 28 Q35 32 32 40 Z"
+                      fill="url(#peciGrad)" />
+                    <!-- Peci detail -->
+                    <path d="M32 39 Q50 35 68 39" stroke="#444" stroke-width="0.8" fill="none" />
+                    <!-- Eyes -->
+                    <ellipse cx="42" cy="46" rx="2.5" ry="3" fill="#2D2D2D" />
+                    <ellipse cx="58" cy="46" rx="2.5" ry="3" fill="#2D2D2D" />
+                    <circle cx="43" cy="45" r="0.8" fill="white" opacity="0.8" />
+                    <circle cx="59" cy="45" r="0.8" fill="white" opacity="0.8" />
+                    <!-- Eyebrows -->
+                    <path d="M37 40 Q42 37 47 40" stroke="#3D3D3D" stroke-width="1.5" fill="none"
+                      stroke-linecap="round" />
+                    <path d="M53 40 Q58 37 63 40" stroke="#3D3D3D" stroke-width="1.5" fill="none"
+                      stroke-linecap="round" />
+                    <!-- Nose -->
+                    <path d="M50 48 Q48 53 50 54 Q52 53 50 48" fill="#D4A882" opacity="0.5" />
+                    <!-- Smile -->
+                    <path d="M44 57 Q50 62 56 57" stroke="#C4887A" stroke-width="1.5" fill="none"
+                      stroke-linecap="round" />
+                    <!-- Ears -->
+                    <ellipse cx="30" cy="46" rx="3" ry="5" fill="#E0BC92" />
+                    <ellipse cx="70" cy="46" rx="3" ry="5" fill="#E0BC92" />
+                  </svg>
+                </div>
               </div>
             </div>
             <div class="couple-role">Mempelai Pria</div>
@@ -2270,7 +2432,22 @@
                   <div class="wa-option wa-shinta">
                     <input type="radio" id="wa-shinta" name="wa-recipient" value="6285798726073" required />
                     <label for="wa-shinta">
-                      <div class="wa-avatar">🌸</div>
+                      <div class="wa-avatar"><svg viewBox="0 0 100 100" width="32" height="32"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="whHijab" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#E8B4D0" />
+                              <stop offset="100%" style="stop-color:#C98DB8" />
+                            </linearGradient>
+                          </defs>
+                          <ellipse cx="50" cy="48" rx="32" ry="38" fill="url(#whHijab)" />
+                          <ellipse cx="50" cy="48" rx="20" ry="23" fill="#FDDCBD" />
+                          <path d="M30 42 Q32 25 50 20 Q68 25 70 42" stroke="#C98DB8" stroke-width="2" fill="none" />
+                          <ellipse cx="42" cy="46" rx="2" ry="2.5" fill="#2D2D2D" />
+                          <ellipse cx="58" cy="46" rx="2" ry="2.5" fill="#2D2D2D" />
+                          <path d="M44 56 Q50 60 56 56" stroke="#D4918A" stroke-width="1.5" fill="none"
+                            stroke-linecap="round" />
+                        </svg></div>
                       <span class="wa-name">Shinta</span>
                       <!-- <span class="wa-number">0857-9872-6073</span> -->
                       <span class="wa-role">Mempelai Wanita</span>
@@ -2279,7 +2456,23 @@
                   <div class="wa-option wa-huda">
                     <input type="radio" id="wa-huda" name="wa-recipient" value="6282115470051" />
                     <label for="wa-huda">
-                      <div class="wa-avatar">🌿</div>
+                      <div class="wa-avatar"><svg viewBox="0 0 100 100" width="32" height="32"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="whPeci" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#2D2D2D" />
+                              <stop offset="100%" style="stop-color:#1A1A1A" />
+                            </linearGradient>
+                          </defs>
+                          <path d="M30 85 Q30 72 38 68 L50 65 L62 68 Q70 72 70 85 Z" fill="#4A6741" />
+                          <ellipse cx="50" cy="48" rx="20" ry="24" fill="#F0D0A8" />
+                          <path d="M30 38 Q30 20 50 16 Q70 20 70 38 L68 40 Q65 32 50 28 Q35 32 32 40 Z"
+                            fill="url(#whPeci)" />
+                          <ellipse cx="42" cy="46" rx="2" ry="2.5" fill="#2D2D2D" />
+                          <ellipse cx="58" cy="46" rx="2" ry="2.5" fill="#2D2D2D" />
+                          <path d="M44 57 Q50 61 56 57" stroke="#C4887A" stroke-width="1.5" fill="none"
+                            stroke-linecap="round" />
+                        </svg></div>
                       <span class="wa-name">Huda</span>
                       <!-- <span class="wa-number">0821-1547-0051</span> -->
                       <span class="wa-role">Mempelai Pria</span>
