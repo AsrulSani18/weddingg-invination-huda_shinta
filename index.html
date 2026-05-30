@@ -167,6 +167,266 @@
       box-shadow: 0 12px 40px rgba(201, 168, 76, 0.55);
     }
 
+    /* ---- Guest Name on Loading Screen ---- */
+    .loading-guest-wrapper {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease 0.6s forwards;
+      text-align: center;
+    }
+
+    .loading-guest-label {
+      font-family: var(--font-serif);
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 2px;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+
+    .loading-guest-name {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 1px;
+      line-height: 1.3;
+      text-shadow: 0 2px 15px rgba(201, 168, 76, 0.3);
+      position: relative;
+      display: inline-block;
+    }
+
+    .loading-guest-name::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 2px;
+      background: var(--gradient-gold);
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    /* ---- Link Generator Panel ---- */
+    #link-generator {
+      background: linear-gradient(180deg, #0d1117 0%, #111a27 50%, #0d1117 100%);
+      text-align: center;
+    }
+
+    .link-gen-wrapper {
+      max-width: 620px;
+      margin: 3rem auto 0;
+      background: var(--dark-card);
+      border-radius: 28px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      border: 1px solid rgba(46, 174, 125, 0.12);
+    }
+
+    .link-gen-header {
+      background: var(--gradient-accent);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .link-gen-header h3 {
+      font-family: var(--font-script);
+      font-size: 2rem;
+      color: var(--gold-light);
+    }
+
+    .link-gen-header p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    .link-gen-body {
+      padding: 2rem;
+    }
+
+    .link-gen-input-group {
+      display: flex;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 500px) {
+      .link-gen-input-group {
+        flex-direction: column;
+      }
+    }
+
+    .link-gen-input {
+      flex: 1;
+      padding: 0.9rem 1.2rem;
+      border: 2px solid rgba(92, 201, 160, 0.15);
+      border-radius: 14px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: #e8f0f8;
+      background: rgba(13, 17, 23, 0.6);
+      transition: all 0.3s ease;
+      outline: none;
+    }
+
+    .link-gen-input:focus {
+      border-color: var(--emerald);
+      background: rgba(13, 17, 23, 0.8);
+      box-shadow: 0 0 0 4px rgba(46, 174, 125, 0.12);
+    }
+
+    .link-gen-btn {
+      padding: 0.9rem 1.8rem;
+      border: none;
+      border-radius: 14px;
+      background: var(--gradient-main);
+      color: white;
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      box-shadow: 0 4px 15px rgba(26, 75, 140, 0.3);
+    }
+
+    .link-gen-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(26, 75, 140, 0.4);
+    }
+
+    .link-gen-result {
+      display: none;
+      background: rgba(13, 17, 23, 0.6);
+      border: 2px solid rgba(46, 174, 125, 0.2);
+      border-radius: 14px;
+      padding: 1rem 1.2rem;
+      margin-top: 1rem;
+      text-align: left;
+      word-break: break-all;
+    }
+
+    .link-gen-result-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--emerald-light);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .link-gen-result-url {
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      color: var(--blue-light);
+      line-height: 1.5;
+      user-select: all;
+    }
+
+    .link-gen-actions {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .link-gen-copy-btn, .link-gen-wa-btn {
+      flex: 1;
+      min-width: 140px;
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 12px;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+
+    .link-gen-copy-btn {
+      background: rgba(46, 174, 125, 0.15);
+      color: var(--emerald-light);
+      border: 1px solid rgba(46, 174, 125, 0.3);
+    }
+
+    .link-gen-copy-btn:hover {
+      background: rgba(46, 174, 125, 0.25);
+    }
+
+    .link-gen-wa-btn {
+      background: #25D366;
+      color: white;
+    }
+
+    .link-gen-wa-btn:hover {
+      background: #20bd5a;
+      transform: translateY(-1px);
+    }
+
+    .link-gen-history {
+      margin-top: 1.5rem;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .link-gen-history-title {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--text-mid);
+      margin-bottom: 0.8rem;
+      text-align: left;
+    }
+
+    .link-gen-history-item {
+      background: rgba(13, 17, 23, 0.4);
+      border-radius: 10px;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.2s ease;
+    }
+
+    .link-gen-history-item:hover {
+      border-color: rgba(46, 174, 125, 0.2);
+      background: rgba(13, 17, 23, 0.6);
+    }
+
+    .link-gen-history-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--text-dark);
+    }
+
+    .link-gen-history-actions {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .link-gen-history-btn {
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text-mid);
+      border-radius: 8px;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.72rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .link-gen-history-btn:hover {
+      border-color: var(--emerald);
+      color: var(--emerald-light);
+    }
+
     /* ============================================================
        MUSIC CONTROL
     ============================================================ */
@@ -2123,6 +2383,10 @@
   <div id="loading-screen">
     <div class="loading-bismillah">Bismillahirrahmanirrahim</div>
     <div class="loading-names">Shinta & Huda</div>
+    <div class="loading-guest-wrapper" id="loading-guest-wrapper" style="display:none;">
+      <div class="loading-guest-label">Kepada Bapak/Ibu/Saudara/i</div>
+      <div class="loading-guest-name" id="loading-guest-name"></div>
+    </div>
     <div class="loading-spinner" id="loading-spinner"></div>
     <button id="open-btn" onclick="openInvitation()">
       ✉ Buka Undangan
@@ -2879,6 +3143,51 @@
         </p>
       </div>
     </section>
+    <!-- ===== LINK GENERATOR (only for owner) ===== -->
+    <section id="link-generator" class="section" style="display:none;">
+      <div class="section-inner">
+        <div style="text-align:center;" class="reveal">
+          <div style="font-size:3rem;margin-bottom:1rem;">🔗</div>
+          <span class="section-tag">Buat Undangan Personal</span>
+          <h2 class="section-title">Link Generator</h2>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Buat link undangan khusus untuk setiap tamu. Nama tamu akan tampil di halaman pembuka undangan.
+          </p>
+          <div class="section-divider" style="justify-content:center;">
+            <div class="section-divider-line"></div>
+            <div class="section-divider-diamond"></div>
+            <div class="section-divider-line"></div>
+          </div>
+        </div>
+
+        <div class="link-gen-wrapper reveal">
+          <div class="link-gen-header">
+            <h3>Buat Link Undangan</h3>
+            <p>Masukkan nama tamu untuk membuat link personal</p>
+          </div>
+          <div class="link-gen-body">
+            <div class="link-gen-input-group">
+              <input type="text" class="link-gen-input" id="guest-name-input" placeholder="Contoh: Ahmad Huda Bulkini" />
+              <button class="link-gen-btn" onclick="generateGuestLink()">✨ Buat Link</button>
+            </div>
+
+            <div class="link-gen-result" id="link-gen-result">
+              <span class="link-gen-result-label">Link Undangan:</span>
+              <div class="link-gen-result-url" id="link-gen-url"></div>
+              <div class="link-gen-actions">
+                <button class="link-gen-copy-btn" id="link-gen-copy" onclick="copyGeneratedLink()">📋 Salin Link</button>
+                <button class="link-gen-wa-btn" onclick="shareViaWhatsApp()">💬 Kirim via WA</button>
+              </div>
+            </div>
+
+            <div class="link-gen-history" id="link-gen-history" style="display:none;">
+              <div class="link-gen-history-title">📝 Riwayat Link Dibuat</div>
+              <div id="link-gen-history-items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ===== FOOTER ===== -->
     <footer id="footer">
@@ -2914,6 +3223,21 @@
     let invitationOpened = false;
 
     window.addEventListener('DOMContentLoaded', () => {
+      // Read guest name from URL parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const guestName = urlParams.get('to');
+
+      if (guestName && guestName.trim() !== '') {
+        // Guest mode: show personalized name
+        const wrapper = document.getElementById('loading-guest-wrapper');
+        const nameEl = document.getElementById('loading-guest-name');
+        nameEl.textContent = decodeURIComponent(guestName.trim());
+        wrapper.style.display = 'block';
+      } else {
+        // Owner mode: show link generator section
+        document.getElementById('link-generator').style.display = 'block';
+      }
+
       setTimeout(() => {
         document.getElementById('loading-spinner').style.display = 'none';
         document.getElementById('open-btn').style.display = 'inline-block';
@@ -3287,6 +3611,149 @@ Terima kasih & semoga menjadi keluarga sakinah mawaddah warahmah`;
       }
       showToast('Membuka Google Calendar...');
     }
+    /* ============================================================
+       LINK GENERATOR
+    ============================================================ */
+    let generatedLink = '';
+    let generatedGuestName = '';
+    let linkHistory = JSON.parse(localStorage.getItem('weddingLinkHistory') || '[]');
+
+    // Render history on load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderLinkHistory();
+    });
+
+    function generateGuestLink() {
+      const input = document.getElementById('guest-name-input');
+      const name = input.value.trim();
+
+      if (!name) {
+        showToast('⚠️ Masukkan nama tamu terlebih dahulu!');
+        input.focus();
+        return;
+      }
+
+      // Build URL
+      const baseUrl = window.location.origin + window.location.pathname;
+      generatedLink = baseUrl + '?to=' + encodeURIComponent(name);
+      generatedGuestName = name;
+
+      // Show result
+      const resultDiv = document.getElementById('link-gen-result');
+      document.getElementById('link-gen-url').textContent = generatedLink;
+      resultDiv.style.display = 'block';
+
+      // Save to history
+      const exists = linkHistory.find(h => h.name === name);
+      if (!exists) {
+        linkHistory.unshift({ name, link: generatedLink, date: new Date().toLocaleDateString('id-ID') });
+        if (linkHistory.length > 50) linkHistory.pop();
+        localStorage.setItem('weddingLinkHistory', JSON.stringify(linkHistory));
+        renderLinkHistory();
+      }
+
+      // Reset copy button
+      const copyBtn = document.getElementById('link-gen-copy');
+      copyBtn.textContent = '📋 Salin Link';
+
+      showToast(`✅ Link untuk "${name}" berhasil dibuat!`);
+      input.value = '';
+    }
+
+    function copyGeneratedLink() {
+      if (!generatedLink) return;
+
+      navigator.clipboard.writeText(generatedLink).then(() => {
+        const btn = document.getElementById('link-gen-copy');
+        btn.textContent = '✅ Tersalin!';
+        showToast('Link berhasil disalin!');
+        setTimeout(() => {
+          btn.textContent = '📋 Salin Link';
+        }, 2500);
+      }).catch(() => {
+        // Fallback
+        const el = document.getElementById('link-gen-url');
+        const range = document.createRange();
+        range.selectNode(el);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        showToast('Link berhasil disalin!');
+      });
+    }
+
+    function shareViaWhatsApp() {
+      if (!generatedLink) return;
+
+      const message = `Assalamu'alaikum Wr. Wb.\n\nDengan memohon Rahmat dan Ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i *${generatedGuestName}* untuk menghadiri acara pernikahan kami:\n\n*Shinta Yulianti Rohman & Ahmad Huda Bulkini*\n📅 Rabu, 24 Juni 2026\n📍 Kp. Tanjung RT 03 RW 04, Desa Selaawi, Kab. Garut\n\nKlik link di bawah untuk membuka undangan digital:\n${generatedLink}\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir. Terima kasih. 🙏`;
+
+      const waUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+      window.open(waUrl, '_blank');
+      showToast('💬 Membuka WhatsApp...');
+    }
+
+    function copyHistoryLink(name) {
+      const item = linkHistory.find(h => h.name === name);
+      if (!item) return;
+
+      navigator.clipboard.writeText(item.link).then(() => {
+        showToast(`✅ Link untuk "${name}" tersalin!`);
+      }).catch(() => {
+        showToast('Gagal menyalin, coba lagi.');
+      });
+    }
+
+    function shareHistoryViaWA(name) {
+      const item = linkHistory.find(h => h.name === name);
+      if (!item) return;
+
+      const message = `Assalamu'alaikum Wr. Wb.\n\nDengan memohon Rahmat dan Ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i *${name}* untuk menghadiri acara pernikahan kami:\n\n*Shinta Yulianti Rohman & Ahmad Huda Bulkini*\n📅 Rabu, 24 Juni 2026\n📍 Kp. Tanjung RT 03 RW 04, Desa Selaawi, Kab. Garut\n\nKlik link di bawah untuk membuka undangan digital:\n${item.link}\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir. Terima kasih. 🙏`;
+
+      const waUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+      window.open(waUrl, '_blank');
+    }
+
+    function renderLinkHistory() {
+      const container = document.getElementById('link-gen-history');
+      const items = document.getElementById('link-gen-history-items');
+
+      if (!container || !items) return;
+
+      if (linkHistory.length === 0) {
+        container.style.display = 'none';
+        return;
+      }
+
+      container.style.display = 'block';
+      items.innerHTML = '';
+
+      linkHistory.forEach(h => {
+        const div = document.createElement('div');
+        div.className = 'link-gen-history-item';
+        div.innerHTML = `
+          <div class="link-gen-history-name">👤 ${escapeHtml(h.name)}</div>
+          <div class="link-gen-history-actions">
+            <button class="link-gen-history-btn" onclick="copyHistoryLink('${escapeHtml(h.name).replace(/'/g, "\\'")}')">📋 Salin</button>
+            <button class="link-gen-history-btn" onclick="shareHistoryViaWA('${escapeHtml(h.name).replace(/'/g, "\\'")}')">💬 WA</button>
+          </div>
+        `;
+        items.appendChild(div);
+      });
+    }
+
+    // Allow Enter key in input
+    document.addEventListener('DOMContentLoaded', () => {
+      const input = document.getElementById('guest-name-input');
+      if (input) {
+        input.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            generateGuestLink();
+          }
+        });
+      }
+    });
   </script>
 </body>
 
