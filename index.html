@@ -3686,7 +3686,7 @@ Terima kasih & semoga menjadi keluarga sakinah mawaddah warahmah`;
     function shareViaWhatsApp() {
       if (!generatedLink) return;
 
-      const message = `Assalamu'alaikum Wr. Wb.\n\nDengan memohon Rahmat dan Ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i *${generatedGuestName}* untuk menghadiri acara pernikahan kami:\n\n*Shinta Yulianti Rohman & Ahmad Huda Bulkini*\n📅 Rabu, 24 Juni 2026\n📍 Kp. Tanjung RT 03 RW 04, Desa Selaawi, Kab. Garut\n\nKlik link di bawah untuk membuka undangan digital:\n${generatedLink}\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir. Terima kasih. 🙏`;
+      const message = `Assalamu'alaikum Wr. Wb.\n\nDengan memohon Rahmat dan Ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i *${generatedGuestName}* untuk menghadiri acara pernikahan kami:\n\n*Shinta Yulianti Rohman & Ahmad Huda Bulkini*\n Pada hari Rabu, 24 Juni 2026\n yang berlokasi Kp. Tanjung RT 03 RW 04, Desa Selaawi, Kab. Garut\n\nKlik link di bawah untuk membuka undangan digital:\n${generatedLink}\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir. Terima kasih.`;
 
       const waUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
       window.open(waUrl, '_blank');
